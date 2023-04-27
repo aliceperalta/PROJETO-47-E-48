@@ -114,7 +114,7 @@ function handleBubbleCollision(bubbleGroup){
        score=score+1;
     }
 
-    blast= bubbleSprite(bullet.x+60, bullet.y, 50,50); //SUBSTITUA O xxxxxx PELA PALAVRA QUE FALTA PARA CRIAR O SPRITE
+    blast= createSprite(bullet.x+60, bullet.y, 50,50); //SUBSTITUA O xxxxxx PELA PALAVRA QUE FALTA PARA CRIAR O SPRITE
     blast.addImage(blastImg); // SUBSTITUA O xxx PELA PALAVRA QUE FALTA PARA ADICIONAR A IMAGEM
     blast.scale=0.3;
     blast.life=20;
