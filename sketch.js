@@ -12,7 +12,7 @@ var gameState=1
 
 function preload(){
   gunImg = loadImage("gun1.png")
-  blastImg = loadImage("blast.XXX") //SUBSTITUIR XXX PELA TERMINAÇÃO CORRETA DO ARQUIVO 
+  blastImg = loadImage("blast.png") //SUBSTITUIR XXX PELA TERMINAÇÃO CORRETA DO ARQUIVO 
   bulletImg = loadImage("bullet1.png")
   blueBubbleImg = loadImage("waterBubble.png")
   redBubbleImg = loadImage("redbubble.png")
@@ -114,8 +114,8 @@ function handleBubbleCollision(bubbleGroup){
        score=score+1;
     }
 
-    blast= xxxxxxSprite(bullet.x+60, bullet.y, 50,50); //SUBSTITUA O xxxxxx PELA PALAVRA QUE FALTA PARA CRIAR O SPRITE
-    blast.xxxImage(blastImg); // SUBSTITUA O xxx PELA PALAVRA QUE FALTA PARA ADICIONAR A IMAGEM
+    blast= bubbleSprite(bullet.x+60, bullet.y, 50,50); //SUBSTITUA O xxxxxx PELA PALAVRA QUE FALTA PARA CRIAR O SPRITE
+    blast.addImage(blastImg); // SUBSTITUA O xxx PELA PALAVRA QUE FALTA PARA ADICIONAR A IMAGEM
     blast.scale=0.3;
     blast.life=20;
     bulletGroup.destroyEach();
